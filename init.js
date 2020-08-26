@@ -1,8 +1,7 @@
-import app from "./app";
+import app from "./app.js";
 
 const PORT = 4000;
 
-const hadleListening = () =>
-  console.log(`✅ Listening on: https://localhost${PORT}`);
-
-app.listen(PORT, hadleListening);
+app.listen(PORT, () =>
+  console.log(`✅ listening on: http://localhost:${PORT}`)
+);
